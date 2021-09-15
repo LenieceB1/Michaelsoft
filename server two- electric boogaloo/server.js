@@ -25,20 +25,12 @@ app.get('/home', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-  res.send('This is the about page Placeholder For HTML');
+  res.send('HTML placeholder');
 });
 
-app.get('/trey', (req, res) => {
-  res.send('Trey Placeholder For HTML');
-});
 
-app.get('/parker', (req, res) => {
-  res.send('Parker Placeholder For HTML');
-});
 
-app.get('/leniece', (req, res) => {
-  res.send('This is the about page Placeholder For HTML');
-});
+
 
 app.listen(PORT, function(err){
     if (err) console.log(err);
