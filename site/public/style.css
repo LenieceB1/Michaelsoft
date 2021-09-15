@@ -1,19 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:800|Merriweather+Sans|Share+Tech+Mono");
 
 :root {
-  --logo-font: "Share Tech Mono", monospace;
-  --header-font: "Raleway", sans-serif;
-  --core-font: "Merriweather Sans", sans-serif;
-
-  --primary: #ffffff;
-  --secondary: #2a3747;
-
-  --highlight: #fa4141;
-
-  --ui-shawdow: 0 2px 4px -1px rgba(0, 0, 0, 0.06),
+  --ui-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06),
     0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
   fill: rgba(0, 0, 0, 0.54);
-  --ui-shawdow-border: 1px solid rgba(0, 0, 0, 0.14);
+  --ui-shadow-border: 1px solid rgba(0, 0, 0, 0.14);
 }
 
 * {
@@ -41,13 +32,13 @@ body {
 h1,
 h2,
 h3 {
-  font-family: var(--header-font);
+  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
 
   padding: 0;
   margin: 0;
 
-  color: var(--secondary);
+  color: #2a3747;
 }
 
 h1 {
@@ -80,7 +71,7 @@ a {
 
   background-size: cover;
 
-  font-family: var(--core-font);
+  font-family: "Merriweather Sans", sans-serif;
 }
 
 .Banner {
@@ -97,17 +88,17 @@ a {
   background: white;
   padding: 15px;
 
-  font-family: var(--logo-font);
+  font-family: "Share Tech Mono", monospace;
 
-  border-bottom: var(--ui-shawdow-border);
-  box-shadow: var(--ui-shawdow);
+  border-bottom: var(--ui-shadow-border);
+  box-shadow: var(--ui-shadow);
 }
 
 .Message {
   background: white;
   padding: 30px;
-  border-bottom: var(--ui-shawdow-border);
-  box-shadow: var(--ui-shawdow);
+  border-bottom: var(--ui-shadow-border);
+  box-shadow: var(--ui-shadow);
 }
 
 .Message > .Title {
@@ -136,7 +127,7 @@ a {
   height: 55px;
   width: 150px;
 
-  background: var(--highlight);
+  background: #fa4141;
 
   border-radius: 30px;
 
@@ -146,14 +137,6 @@ a {
 
   text-transform: capitalize;
 
-  border-bottom: var(--ui-shawdow-border);
-  box-shadow: var(--ui-shawdow);
-}
-.WelcomeView {
-  background: url("dev-food.jpg") left bottom;
-  background-size: cover;
-}
-.UserView {
-  background: url("team.jpg") left bottom;
-  background-size: cover;
+  border-bottom: var(--ui-shadow-border);
+  box-shadow: var(--ui-shadow);
 }
