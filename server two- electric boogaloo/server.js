@@ -21,12 +21,33 @@ app.get('/', function(req, res){
 });
 
 app.get('/home', (req, res) => {
-  res.send('This is the home page');
+  res.sendfile('bios/home.html');
 });
 
-app.get('/about', (req, res) => {
-  res.send('HTML placeholder');
+app.get('/parker', (req, res) => {
+  res.sendfile('bios/parker.html');
 });
+
+
+
+app.get('/trey', (req, res) => {
+  res.sendfile('bios/trey.html');
+});
+
+
+
+app.get('/logan', (req, res) => {
+  res.sendfile('bios/logan.html');
+});
+
+
+
+app.get('/leniece', (req, res) => {
+  res.sendfile('bios/leniece.html');
+});
+
+
+
 
 
 
